@@ -1,0 +1,91 @@
+<section class="" >
+    <div class="container h-30">
+    
+     
+              <div class="row justify-content-center">
+                <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+  
+                  <p class="text-center h1  mb-5 mx-1 mx-md-4 mt-4">Student Sign up</p>
+  
+                  <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-user fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <div class="field text-lg-start">
+                            <%= f.label :name,class:"form-label" %><br />
+                            <%= f.text_field :name, autofocus: true,class:"form-control" %>
+                          </div>
+                     
+                      </div>
+                    </div>
+  
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline field flex-fill mb-0">
+                        <%= f.label :phone,class:"form-label" %><br />
+                        <%= f.phone_field :phone, autofocus: true,class:"form-control" %>
+                      </div>
+                    </div>
+  
+                    <div class="d-flex flex-row align-items-center mb-4">
+                        <i class="fas fa-envelope fa-lg me-3 fa-fw"></i>
+                        <div class="form-outline field flex-fill mb-0">
+                            <div class="field">
+                                <%= f.label :email,class:"form-label" %><br />
+                                <%= f.email_field :email, autofocus: true, autocomplete: "email",class:"form-control" %>
+                              </div>
+                        </div>
+                      </div>
+
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-lock fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <div class="field">
+                            <%= f.label :password,class:"form-label" %>
+                            <% if @minimum_password_length %>
+                            <em>(<%= @minimum_password_length %> characters minimum)</em>
+                            <% end %><br />
+                            <%= f.password_field :password, autocomplete: "new-password",class:"form-control" %>
+                          </div>
+                       
+                      </div>
+                    </div>
+  
+                    <div class="d-flex flex-row align-items-center mb-4">
+                      <i class="fas fa-key fa-lg me-3 fa-fw"></i>
+                      <div class="form-outline flex-fill mb-0">
+                        <div class="field">
+                            <%= f.label :password_confirmation,class:"form-label" %><br />
+                            <%= f.password_field :password_confirmation, autocomplete: "new-password",class:"form-control" %>
+                          </div>
+                        
+                      </div>
+                    </div>
+  
+                    
+  
+                    <div class="d-flex justify-content-center mx-4 mb-3 mb-lg-4" >
+                        <div class="actions">
+                            <%= f.submit "Sign up",class:"btn btn-primary btn-lg "%>
+                          </div>
+                        <% end %>
+               
+                    </div>
+            
+                  
+
+                </div>
+                <div class="col-md-10 col-lg-6 col-xl-7 d-flex align-items-center order-1 order-lg-2">
+  
+                <%= image_tag "stureg.gif",class:"img-fluid"%>
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>

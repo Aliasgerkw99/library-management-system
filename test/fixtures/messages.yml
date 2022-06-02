@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  sender: 1
+  receiver: 1
+  content: MyString
+  mdate: 2022-03-26
+  mtime: 2022-03-26 23:25:38
+
+two:
+  sender: 1
+  receiver: 1
+  content: MyString
+  mdate: 2022-03-26
+  mtime: 2022-03-26 23:25:38

@@ -1,0 +1,24 @@
+<div class="container" style="display:flex;">
+<div style="padding:40px;">
+<h1>Welcome to Library</h1>
+<% if admin_signed_in? %>
+
+<%= link_to 'View Reports','/reports/show',class:"btn btn-info",style:"color:white;"%><br><br>
+<%= link_to 'View Admins',admins_path,class:"btn btn-info",style:"color:white;"%><br><br>
+<%= link_to 'View Students',"/students/show",class:"btn btn-info",style:"color:white;"%><br><br>
+<%= link_to 'View Books',books_path,class:"btn btn-info",style:"color:white;"%><br><br>
+
+
+<% elsif student_signed_in? %>
+<%= link_to 'View Books',books_path,class:"btn btn-info",style:"color:white;"%><br><br>
+
+
+<% else %>
+
+<% end %>
+</div>
+<div>
+<%= image_tag "lib3.png",class:"img-fluid"%>
+</div>
+</div>
+

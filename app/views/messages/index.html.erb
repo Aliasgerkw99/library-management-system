@@ -1,0 +1,20 @@
+<body style="background-color:rgb(222 225 232);">
+<h1>Notifications</h1>
+<% @mes.each do |mess| %>
+<div style="width:100%; height:auto;  box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+10px 10px 15px rgba(70,70,70,0.12);border-radius:6px; ">
+<div style="width:100%;padding:9px; ">
+<span style="color:rgb(0 149 239);  font-weight:400;"><%= user() %></span>
+<span style="color:grey;  font-weight:400; float:right;"><%= mess.mdate %></span>
+<div style="margin-top:10px;">
+<span style="color:#48c948; font-weight:400; "> <%= mess.content %></span>
+</div>
+<div style="margin-top:10px;">
+<span style="color:grey; font-weight:200;"><%= mess.mtime %> </span>
+</div>
+</div>
+</div>
+<div style="width:100%;margin-top:8px;">
+</div>
+<%end%>
+</body>
