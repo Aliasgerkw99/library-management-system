@@ -8,7 +8,7 @@ gem "rails", "~> 7.0.2", ">= 7.0.2.3"
 gem 'devise', '~> 4.8', '>= 4.8.1'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
-gem "letter_opener", group: :development
+
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem "sqlite3", "~> 1.4"
