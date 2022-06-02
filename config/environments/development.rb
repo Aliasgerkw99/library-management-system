@@ -11,7 +11,8 @@ Rails.application.configure do
   config.action_mailer.perform_deliveries = true
   # Do not eager load code on boot.
   config.eager_load = false
-
+  config.enable_dependency_loading = true
+  config.eager_load_paths << Rails.root.join('lib')
   # Show full error reports.
   config.consider_all_requests_local = true
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
