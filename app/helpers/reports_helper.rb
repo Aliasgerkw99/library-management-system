@@ -2,7 +2,7 @@ module ReportsHelper
     def penalty(rdate,sid,bid)
         sqq=Report.find_by(student_id:sid,book_id:bid)
         if sqq.book_status=="Issued"
-            currenttime=Time.now.strftime("%d-%m-%Y")
+            currenttime=Time.now.strftime("18-06-2022")
             currenttime=Date.parse(currenttime)
             returndate=rdate
             if returndate.nil?
