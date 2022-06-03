@@ -18,4 +18,5 @@ Rails.application.routes.draw do
   end
   resources :reports
   resources :messages
+  resources :charges, only: [:new, :create]
 end
